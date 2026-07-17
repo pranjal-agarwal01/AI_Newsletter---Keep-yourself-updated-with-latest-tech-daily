@@ -1,0 +1,49 @@
+# News sources for the daily digest. Edit freely — each adapter reads its own section.
+
+rss:
+  feeds:
+    # Anthropic publishes no RSS feed; their announcements arrive via HN + Simon Willison
+    - name: Google DeepMind
+      url: https://deepmind.google/blog/rss.xml
+    - name: OpenAI Blog
+      url: https://openai.com/news/rss.xml
+    - name: Google AI Blog
+      url: https://blog.google/technology/ai/rss/
+    - name: Hugging Face Blog
+      url: https://huggingface.co/blog/feed.xml
+    - name: Simon Willison
+      url: https://simonwillison.net/atom/everything/
+  max_items_per_feed: 15
+
+hackernews:
+  max_stories: 60          # how many top stories to scan
+  min_score: 80            # minimum HN points
+  keywords:                # keep a story if title matches any whole word (case-insensitive)
+    - "ai"
+    - "llm"
+    - "gpt"
+    - "claude"
+    - "gemini"
+    - "openai"
+    - "anthropic"
+    - "machine learning"
+    - "neural"
+    - "transformer"
+    - "agent"
+    - "model"
+    - "rag"
+    - "embedding"
+
+arxiv:
+  categories: [cs.AI, cs.CL, cs.LG]
+  max_results: 40
+
+# Items older than this many hours are ignored during selection
+freshness_hours: 36
+
+# Refuse to send a new issue if the previous one went out less than this many
+# hours ago (11 rather than 12 to tolerate scheduler jitter). --force overrides.
+min_hours_between_issues: 11
+
+# Maximum candidates passed to Claude in one call
+max_candidates: 25

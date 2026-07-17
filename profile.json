@@ -1,0 +1,31 @@
+{
+  "name": "Your Name",
+  "current_role": "Automation builder — I build workflow automations and AI-powered integrations",
+  "target_role": "AI automation specialist",
+  "experience_levels": {
+    "workflow_automation": "advanced",
+    "llm_apis_and_agents": "intermediate",
+    "python_scripting": "intermediate",
+    "ml_research_papers": "beginner"
+  },
+  "tech_stack": ["n8n", "Python", "OpenRouter", "REST APIs", "webhooks", "Telegram bots"],
+  "interests": [
+    "automation tools and platforms (n8n, Zapier, Make, workflow engines)",
+    "AI agents, agent frameworks, and MCP integrations",
+    "new AI tools, apps, and product launches I can actually use",
+    "LLM APIs: new models, pricing changes, free tiers, context limits",
+    "no-code and low-code AI integrations",
+    "practical AI workflows for productivity and business automation",
+    "open-source self-hostable AI tools"
+  ],
+  "goals": [
+    "Spot new AI tools and models early so my automations stay ahead of the curve",
+    "Find concrete techniques and integrations I can plug into client or personal workflows",
+    "Track the AI tooling landscape without reading 50 sites a day"
+  ],
+  "digest_preferences": {
+    "max_items": 10,
+    "tone": "direct and practical, no hype",
+    "depth": "focus on what I can build or automate with it; mention pricing/free tiers and integration options; skip heavy math"
+  }
+}
